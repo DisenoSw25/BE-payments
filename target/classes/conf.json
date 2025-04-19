@@ -1,0 +1,5 @@
+{
+	"price": 12,
+	"Stripe.apiKey": " ",//lo que sea
+	"currency": "eur"
+}
