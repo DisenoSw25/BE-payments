@@ -28,22 +28,7 @@ public class ProxyStripe {
             String clientSecret = jso.getString("client_secret");
             return clientSecret;
         } catch (Exception e) {
-            throw new ResponseStatusException(HttpStatus.I_AM_A_TEAPOT, "Error al procesar tu status");
+            throw new ResponseStatusException(HttpStatus.I_AM_A_TEAPOT, "Error al procesar status");
         }
     }
-
-    // public boolean pay(JSONObject jso) {
-    //     try {
-    //         // Simulación: en Stripe real, aquí confirmarías el PaymentIntent con los datos de la tarjeta
-    //         String paymentIntentId = jso.getString("paymentIntentId");
-    //         // Aquí podrías usar la API de Stripe para confirmar el pago si fuera necesario
-    //         // PaymentIntent intent = PaymentIntent.retrieve(paymentIntentId);
-    //         // intent.confirm(...);
-
-    //         // Simulamos que el pago se realiza correctamente
-    //         return true;
-    //     } catch (Exception e) {
-    //         return false;
-    //     }
-    // }
 }
