@@ -16,7 +16,8 @@ import edu.uclm.esi.payments.services.PaymentsService;
 
 @RestController
 @RequestMapping("payments")
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:4200",
+               allowCredentials = "true")
 
 public class PaymentsController {
 
